@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Venta de productos informáticos">
+        <meta name="author" content="Pablo Araoz">
+        <link rel="icon" href="./img/logo-miniatura.png" type="image/png">
+        <!--FUENTES: -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Poppins:wght@300;400&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap">
+        <!--BOOTSTRAP:-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <!--MIS CSS:-->
+        <link rel="stylesheet" href="./css/style.css">        
+        <title>PADAAR games | Descripción</title>
+    </head>
+    
+    <body>
+        <header class="header">            
+            <img src="./img/Logo.png" alt="logo" class="logo">
+            <!--BOTON FIJO:-->            
+            <div class="menu__barras">
+                <span class="linea1__menu-barras"></span>
+                <span class="linea2__menu-barras"></span>
+                <span class="linea3__menu-barras"></span>
+            </div>                                     
+            <!--MENU CON LINKS:-->
+            <div class="container-menu">
+                <div class="contenido-menu">                
+                    <nav class="nav">
+                        <a href="index.html">Home</a>
+                        <a href="#sobre-nosotros">Sobre nosotros</a>
+                        <a href="#medios-pago">Medios de pago</a>
+                    </nav>                    
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="carrusel-1">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="./img/12cuotas.jpg" class="d-block w-100" alt="12cuotas">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="./img/envios.jpg" class="d-block w-100" alt="envios-gratis">
+                        </div>                        
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="productos-descripcion"></section>
+            <section class="caracteristicas"></section>            
+            
+            <section class="medios-pago-2" id="medios-pago">   
+                <p class="tarjetas">Medios de pago con tarjetas</p>  
+                <figure class="container-tarjetas">
+                    <img src="./img/mastercard.png" alt="mastercard" class="mastercard">
+                    <img src="./img/Mercado-Pago-Logo.png" alt="mercadopago" class="mercadopago">
+                    <img src="./img/visa.png" alt="visa" class="visa">
+                </figure>           
+            </section>        
+
+        </main>
+
+        <footer class="footer">      
+            <div class="grid-contacto">
+                <section class="nosotros" id="sobre-nosotros">
+                    <h3>Sobre nosotros</h3>
+                    <p><strong>PADAAR Games</strong> es una página puramente creada por Pablo Araoz (Frontend web developer).</p>
+                    <p><strong>PADAAR</strong> significa Pablo Daniel Araoz</p>                    
+                </section>
+                               
+                <section class="contacto">
+                    <h3>Contacto:</h3>
+                    <div class="contactos">
+                        <i class="bi bi-telephone"></i> 
+                        <a href="tel:+">11-5818-6858</a>
+                    </div>                    
+                    <div class="contactos">
+                        <i class="bi bi-envelope-at-fill"></i>
+                        <a href="mailto:"> </i>pablodaniel_84@hotmail.com</a>
+                    </div>
+                </section>
+            </div>      
+
+            <section class="mapa">
+                <h3>Vení a visitarnos:</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.2759644674898!2d-58.64438022344283!3d-34.62246585848986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8cd88c994d3%3A0xa78c8421302573ff!2sCaraguata%20127%2C%20Villa%20Tesei%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1690249372577!5m2!1ses-419!2sar" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            
+            <section class="redes-sociales">
+                <h3>Seguinos en nuestras redes sociales</h3>
+                <div class="iconos-redes">
+                    <a href="https://wa.me/5491158186858"><img src="./img/whatsapp-64px.png" alt="whatsapp"></a>
+                    <a href="https://www.instagram.com/"><img src="./img/instagram-64px.png" alt="Instagram"></a>
+                    <a href="https://es-la.facebook.com/"><img src="./img/facebook-64px.png" alt="Facebook"></a>
+                </div>
+            </section>
+            <section class="copyright">
+                <p class="p-copyright">Pablo Araoz © 2023 - Todos los derechos reservados</p>
+            </section>
+        </footer>
+        
+        <!--JavaScript:-->
+        <script src="./js/animacion-menu.js"></script>
+        <script src="./js/descripcion.js"></script>
+        <!--Script Bootstrap para Carousel:-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

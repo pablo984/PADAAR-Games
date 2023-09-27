@@ -1,0 +1,385 @@
+*{
+    box-sizing: border-box;        
+}
+
+body{
+    margin:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*---------------HEADER--------------------------------*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;    
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding: 1em;
+}
+
+.logo{
+    width: 150px;       
+    z-index: 6;
+}
+
+.container-menu{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease;
+    z-index: 3;
+}
+
+.contenido-menu{
+    position: absolute;
+    width: 100%;
+    max-width: 235px;
+    top:0;
+    left: 0;    
+    background-color: #0082ce;;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: all 500ms ease;
+    z-index: 5;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;    
+    gap: 2em;
+    padding-left: 1em;
+    transform: translateY(80%); /*Altura de los links con respecto al header*/
+}
+
+.nav > a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    color: #FFF;
+}
+
+/*ANIMACIÓN: */
+.animacion{
+    opacity: 1;
+    visibility: visible;    
+}
+
+.animacion-2{
+    transform: translateX(0%);
+}
+
+/*-------MENU HAMBURGUESA--------------------------
+El "menu__barras", al tener una "position:absolute",
+se posiciona con respecto al "header" que tiene una
+"position:relative" y, además, es hijo de él.*/
+.menu__barras{   
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top:35%;
+    right: 5%;
+    transform: scale(1);
+    cursor: pointer;       
+    z-index: 5;    
+}
+
+.menu__barras > span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 600ms;
+}
+
+/*Clases que no estan en el HTML, pero que seran
+agregadas a las barras <span> mediante JavaScript: */
+.activarLinea1__menu-barras{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activarLinea2__menu-barras{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activarLinea3__menu-barras{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+/*---------------MAIN--------------------------------*/
+.productos{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.titulo-principal{
+    text-align: center;
+    color: rgb(0, 119, 216);
+    margin-top: 1.5rem;
+}
+
+.subtitulo{
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.productos-descripcion, .productos-semidescripcion{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.boton-pagina-principal, .boton-volver{
+    background-color: #00774f;
+    color:#eeeeee;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 3px 8px 0 rgb(94, 94, 94);
+    cursor: pointer;
+}
+
+.boton-volver{
+    margin-top: 1.5rem;
+}
+
+.container-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    border:1px solid rgb(226, 226, 226);
+    box-shadow: 1px 3px 8px 0 rgb(167, 167, 167);
+}
+
+.container-producto > h2{
+    text-align: center;
+}
+
+.container-producto > p{
+    font-family: 'Poppins';
+}
+
+.stock{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    background-color: green;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgb(167, 167, 167);
+    margin: 0;
+}
+
+.p-stock{
+    color:#FFF;
+    margin: 0;
+}
+
+.nombre-p{
+    text-align: center;
+    color:rgb(85, 85, 85);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.descripcion{
+    color:rgb(0, 119, 216);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.container-caracteristicas{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-top: 2px solid rgb(0, 119, 216);
+    border-bottom: 2px solid rgb(0, 119, 216);
+}
+
+.container-caracteristicas > h3{
+    color:#0082ce;
+}
+
+.container-caracteristicas > p{
+    text-transform: capitalize;
+}
+
+.foto{
+    width: 270px;
+}
+
+.precio{
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+    color:#00774f;
+}
+
+.estrella{
+    width: 30px;
+}
+
+.divEstrellas{
+    display: flex;
+    column-gap: 3px;
+    background-color: aqua;
+    padding: 8px;
+    border-radius: 5px;
+    border:1px solid rgb(196, 196, 196)
+}
+
+.primer-p{
+    margin:0;
+    font-weight: bold;    
+}
+
+.segundo-p {
+    font-size: 0.9rem;
+    color:#8d8d8d;
+    margin: 0;    
+}
+
+.medios-pago{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-top: 2px solid #0082ce;
+}
+
+.medios-pago-2{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.tarjetas{
+    color:rgb(0, 119, 216);
+    text-align: center;
+    font-family:'Poppins';
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.container-tarjetas{
+    display: flex;    
+    justify-content:space-around;
+    column-gap: 10px;
+}
+
+.visa{
+    width: 80px;
+}
+
+.mastercard{
+    width: 100px;
+}
+
+.mercadopago{
+    width: 85px;
+}
+
+
+/*---------------FOOTER---------------------------- */
+.footer{
+    background-color:#000000;
+    font-family: 'Montserrat';
+    color: #FFF;    
+    font-size: 0.8rem;
+    text-align: start;
+    padding: 1em;
+}
+
+.link-formulario{
+    color:aqua;
+    text-decoration: none;
+}
+
+.nosotros > h3{    
+    font-size: 1.1rem;
+    font-weight:600;
+}
+
+.nosotros > p{
+    text-align: left;
+}
+
+.sugerencias > h3{    
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.sugerencias > p{
+    text-align: left;
+}
+
+.contacto > h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0.4em;
+}
+
+.contactos{
+    margin-bottom: 1em;
+}
+
+.contactos > i{
+    font-size: 1rem;
+    font-style: normal;  
+}
+
+.contactos > a{
+    text-decoration: none;  
+    color:aqua;    
+}
+
+.mapa > h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.redes-sociales > h3{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.iconos-redes{
+    text-align: center;
+}
+
+.iconos-redes > a > img{
+    transform: scale(0.6);
+}
+
+.copyright{
+    text-align: center;
+    border-top: 1px solid #FFF;
+    margin-top: 1em;
+    padding-top: 0.5em;
+}
+
+.p-copyright{
+    text-align: center;
+}
