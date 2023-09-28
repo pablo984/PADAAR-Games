@@ -84,7 +84,7 @@ botonVolver.addEventListener('click', volverALaPaginaPrincipal);
 
 //Toma el valor de la clave "estrellas" del JSON y agrega a cada producto tantas estrellas como diga el JOSN:
 function agregarEstrellas(container, cantidad){
-    let urlEstrella = "../img/estrella.png";
+    let urlEstrella = "./img/estrella.png";
     
     for(let i=0; i<cantidad; i++){
         container.innerHTML += `<img class="estrella" src="${urlEstrella}"></img>`;        
