@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 
-/*---------------HEADER--------------------------------*/
+/*---------------------------HEADER------------------------------------*/
 .header{
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@ agregadas a las barras <span> mediante JavaScript: */
     transform: rotate(-45deg) translate(-4px, 2px);
 }
 
-/*---------------MAIN--------------------------------*/
+/*---------------------------MAIN------------------------------------*/
 .productos{
     margin-left: 1rem;
     margin-right: 1rem;
@@ -300,7 +300,7 @@ agregadas a las barras <span> mediante JavaScript: */
 }
 
 
-/*---------------FOOTER---------------------------- */
+/*---------------------------FOOTER------------------------------------*/
 .footer{
     background-color:#000000;
     font-family: 'Montserrat';
