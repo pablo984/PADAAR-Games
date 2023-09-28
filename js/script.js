@@ -33,7 +33,7 @@ function verificarLocalStorage(){
 
 //Busca el JSON en la URL proporcionada y lo transforma a objeto JS, luego se sube el JSON puro al localStorage:
 async function cargarJsonYCrearListaDeProductos(){
-    const response = await fetch('../json/productos.json');
+    const response = await fetch('./json/productos.json');
     const data = await response.json();
     console.log('Status OK: se cargó el JSON exitosamente y se transformó en Objeto JS:');
     console.log(data);  

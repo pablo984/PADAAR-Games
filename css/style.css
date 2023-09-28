@@ -287,7 +287,8 @@ agregadas a las barras <span> mediante JavaScript: */
 
 .container-tarjetas{
     display: flex;    
-    justify-content:space-around;
+    align-items: center;
+    justify-content:space-between;
     column-gap: 10px;
 }
 
@@ -296,11 +297,13 @@ agregadas a las barras <span> mediante JavaScript: */
 }
 
 .mastercard{
-    width: 100px;
+    width: 90px;
+    height: 70px;
 }
 
 .mercadopago{
     width: 85px;
+    height: 80px;
 }
 
 

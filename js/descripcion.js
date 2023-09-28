@@ -67,7 +67,7 @@ divContainerProducto.innerHTML += `<button class="boton-volver">Volver a la pág
 seccionDescripcion.appendChild(divContainerProducto);
 
 //Se le coloca un subtítulo al container de características del producto:
-divContainerCaracteristicas.innerHTML = `<h3>Caracteristicas</h3>`;
+divContainerCaracteristicas.innerHTML = `<h3>Características</h3>`;
 
 //Se recorren las claves, se construyen <p> y se imprimen los valores de cada clave en 'negrita' en el conatiner de características:
 claves.forEach(clave => {
