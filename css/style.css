@@ -134,6 +134,9 @@ agregadas a las barras <span> mediante JavaScript: */
 }
 
 .productos-descripcion, .productos-semidescripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -156,6 +159,7 @@ agregadas a las barras <span> mediante JavaScript: */
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 520px;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     padding-top: 10px;
@@ -382,4 +386,229 @@ agregadas a las barras <span> mediante JavaScript: */
 
 .p-copyright{
     text-align: center;
+}
+
+/*---------------------------RESPONSIVE------------------------------------*/
+
+/*-------------RESPONSIVE DE LOGO----------------------------------- */
+@media (min-width: 320px) and (max-width: 1920px) {
+    .logo{         
+        width: calc(150px + (250 - 150) * ((100vw - 320px) / (1920 - 320))); 
+    }
+}
+    
+
+/*---------------------------Pantallas a 768px------------------------------------*/
+@media screen and (min-width:768px) {
+    .logo{
+        margin-left: 2.2rem;
+    }
+
+    /*Ocultar el botón de barras:*/
+    .menu__barras{
+        display: none;
+    }
+
+    .container-menu{
+        position:static;
+        background-color:transparent;
+        width: auto;
+        height: auto;        
+        opacity: 1;
+        visibility: visible;
+        transition: all 0ms ease;
+    }
+
+    .contenido-menu{
+        position: static;
+        width: auto;
+        max-width:fit-content; /*Deja que el contenido ajuste el ancho*/           
+        background-color:transparent;
+        height: auto;
+        margin-right: 2.2rem;
+        transform: translateX(0%);
+        transition: all 0ms ease;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction:row;
+        justify-content: end;    
+        gap: 1em;
+        padding-left: 0;
+        transform: translateY(0%); /*Altura de los links con respecto al header*/
+    }
+
+    .nav > a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        padding: 5px;
+        color: #520096;
+    }
+
+    .nav > a:hover{
+        color:red;
+        text-decoration: underline;
+    }
+
+    .productos{
+        margin-left: 2.2rem;
+        margin-right: 2.2rem;
+    }
+
+    .medios-pago{
+        margin-left: 2.2rem;
+        margin-right: 2.2rem;
+    }
+
+    .boton-pagina-principal:hover, .boton-volver:hover{
+        background-color: #000000;
+        color:#1eff00;
+        border: 0;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: 1px 3px 8px 0 rgb(94, 94, 94);
+        cursor: pointer;
+    }
+
+    .footer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .grid-contacto{
+        display: flex;
+        gap: 25px;
+        justify-content: space-evenly;
+    }
+
+    .contactos > a:hover{
+        color: red;
+    }
+
+    .iconos-redes > a > img:hover{
+        transform: scale(0.56);
+        transition: all 100ms;        
+    }
+}
+
+/*---------------------------Pantallas a 1024px------------------------------------*/
+@media screen and (min-width:1024px) {
+    .logo{
+        margin-left: 7rem;
+    }
+
+    .contenido-menu{
+        margin-right: 7rem;
+    }
+
+    .p-titulo{
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+
+    .productos{
+        margin-left: 5.2rem;
+        margin-right: 5.2rem;
+    }
+
+    .caracteristicas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-caracteristicas{
+        /* margin-left: 8.2rem;
+        margin-right: 8.2rem; */
+        width: 520px;
+    }
+
+    .medios-pago, .medios-pago-2{
+        margin:auto;
+        width: 520px;
+    }
+
+    .footer{
+        padding-left: 5.2em;
+        padding-right: 5.2em;
+    }
+
+    .grid-contacto{
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 768px;
+        margin:auto;
+    }
+
+}
+
+/*---------------------------Pantallas a 1440px------------------------------------*/
+@media screen and (min-width:1440px) {
+    .logo{
+        margin-left: 12rem;
+    }
+
+    .contenido-menu{
+        margin-right: 12rem;
+    }
+
+    .p-titulo{
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+
+    .productos{
+        margin-left: 5.2rem;
+        margin-right: 5.2rem;
+    }
+
+    .caracteristicas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-caracteristicas{
+        /* margin-left: 8.2rem;
+        margin-right: 8.2rem; */
+        width: 520px;
+    }
+
+    .medios-pago, .medios-pago-2{
+        margin:auto;
+        width: 520px;
+    }
+
+    .footer{
+        padding-left: 5.2em;
+        padding-right: 5.2em;
+    }
+
+    .grid-contacto{
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        margin-left: 18rem;
+        margin-right: 18rem;
+    }
+
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 768px;
+        margin:auto;
+    }
+
 }
