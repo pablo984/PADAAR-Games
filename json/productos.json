@@ -4,7 +4,7 @@
         "nombre":"Mouse Gamer Logitech G Pro X Superlight Negro",
         "basico":"Sensor óptico - 25600 dpi",
         "precio":"$98.499",
-        "estrellas":4,
+        "puntuacion":"****",
         "caracteristicas":{
             "marca":"Logitech",
             "modelo":"Pro X Superlight",
@@ -26,7 +26,7 @@
         "nombre":"Auricular Gamer Logitech Lightspeed RGB Inalámbrico Negro",
         "basico":"Surround - Over ear",
         "precio":"$130.399",
-        "estrellas":3,
+        "puntuacion":"***",
         "caracteristicas":{
             "marca":"Logitech",
             "modelo":"G733P",
@@ -47,7 +47,7 @@
         "nombre":"Placa De Video GeForce RTX 4090 24Gb MSI Gaming Trio",
         "basico":"Super silenciosa",
         "precio":"$1.999.999",
-        "estrellas":5,
+        "puntuacion":"*****",
         "caracteristicas":{
             "marca":"MSI",
             "modelo":"GeForce RTX 4090 GAMING TRIO 24G",
@@ -70,7 +70,7 @@
         "nombre":"Notebook Asus X515EA Core i5 1135G7 8Gb Ssd 256Gb 15.6' Win11",
         "basico":"Batería de larga duración",
         "precio":"$514.999",
-        "estrellas":3,
+        "puntuacion":"***",
         "caracteristicas":{
             "marca":"ASUS",
             "modelo":"X515EA",
@@ -97,7 +97,7 @@
         "nombre":"Teclado Gamer HyperX Alloy Origins Core Mecánico Switch Aqua",
         "basico":"Teclas Cherry-Red",
         "precio":"$108.599",
-        "estrellas":3,
+        "puntuacion":"***",
         "caracteristicas":{
             "marca":"HyperX",
             "modelo":"Alloy Origins Core",
@@ -106,7 +106,7 @@
             "conectividad":"USB",
             "refresco":"1000 Hz",
             "switch":"Mecánico, HyperX Aqua Tactile",
-            "resposamuñecas":"Si",
+            "reposamanos":"Si",
             "peso":"900g",
             "retroiluminacion":"Si RGB",
             "dimensiones":"360 x 132,5 x 34,5 mm",
@@ -120,7 +120,7 @@
         "nombre":"Monitor Gamer 24' Viewsonic Full Hd IPS 100Hz 1Ms VX2416",
         "basico":"Colores brillantes",
         "precio":"$129.999",
-        "estrellas":2,
+        "puntuacion":"**",
         "caracteristicas":{
             "marca":"Viewsonic",
             "modelo":"VX2416",

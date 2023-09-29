@@ -4,6 +4,9 @@ let datosJSON;
 //Variable que almacenará el dato JSON transformado a Objeto JavaScript: 
 let deJSONaObjetoJs;
 
+//PROVISORIO: FUNCIÓN QUE BORRARÁ EL LOCAL STORAGE PARA ACTUALIZAR LOS DATOS DEL JSON:
+localStorage.clear();
+
 //Sección que contendrá la lista de productos: 
 const listaDeProductos = document.querySelector('.productos-semidescripcion');
 
@@ -80,8 +83,8 @@ function obtenerIdDeBotonesYCargarloAlSessionStorage(){
             // Obtener el id del botón clickeado:
             let botonId = event.target.id;
                         
-            //Sube el "id" del botón al "sessionStorage":
-            sessionStorage.setItem("idBoton", botonId);
+            //Sube el "id" del botón al "localStorage":
+            localStorage.setItem("idBoton", botonId);
 
             //Va a la página de productos.html:
             window.location.href = "descripcion.html"

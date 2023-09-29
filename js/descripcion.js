@@ -2,7 +2,7 @@
 const arrayDeJson = localStorage.getItem("productos");
 
 //Guarda el "ID" del boton en la siguiente variable:
-let idBoton = sessionStorage.getItem("idBoton");
+let idBoton = localStorage.getItem("idBoton");
 console.log("El ID del botón presionado es:", idBoton);
 
 console.log("El JSON en el localStorage fue descargado exitosamente en la variable 'arrayDeJson':")
@@ -21,6 +21,15 @@ console.log('Este es JSON convertido a Objeto Js:', productosObjetoJs);
 //Sección que contendrá la descripción de un producto en particular:
 const seccionDescripcion = document.querySelector('.productos-descripcion');
 const seccionCaracteristicas = document.querySelector('.caracteristicas');
+
+//Constante que contiene la URL de la estrella amarilla: 
+const estrella = "./img/estrella.png";
+
+//Constante que contiene la URL de la estrella blanca: 
+const estrellaBlanca = "./img/estrella-blanca.png";
+
+//Constante que contiene el número de estrellas de un producto:
+const cantidadDeEstrellasDelProducto = productosObjetoJs[idBoton].puntuacion.length;
 
 //Sólo se obtienen las CLAVES del objeto que le pase del array: 
 let claves = Object.keys(productosObjetoJs[idBoton].caracteristicas); 
@@ -60,7 +69,9 @@ divContainerProducto.innerHTML = `<h2>${productosObjetoJs[idBoton].nombre}</h2>`
 divContainerProducto.appendChild(etiquetaImg);
 divContainerProducto.innerHTML += `<p class="precio">${productosObjetoJs[idBoton].precio}</p>`
 //Función que agrega estrellas al contenedor de estrellas:
-agregarEstrellas(divContenedorEstrellas, productosObjetoJs[idBoton].estrellas);
+agregarEstrellas(divContenedorEstrellas, cantidadDeEstrellasDelProducto, estrella);
+//Ahora agrego las estrellas blancas al contenedor de estrellas: 
+agregarEstrellas(divContenedorEstrellas, (5 - cantidadDeEstrellasDelProducto), estrellaBlanca);
 divContainerProducto.appendChild(divContenedorEstrellas);
 divContainerProducto.innerHTML += `<button class="boton-volver">Volver a la página principal</button>`
 //Se agrega todo lo creado anteriormente a la sección 'seccionDescripcion':
@@ -82,12 +93,10 @@ const botonVolver = document.querySelector('.boton-volver');
 
 botonVolver.addEventListener('click', volverALaPaginaPrincipal);
 
-//Toma el valor de la clave "estrellas" del JSON y agrega a cada producto tantas estrellas como diga el JOSN:
-function agregarEstrellas(container, cantidad){
-    let urlEstrella = "./img/estrella.png";
-    
+//Toma agrega a cada producto tantas estrellas como diga la clave 'puntuacion' del JOSN:
+function agregarEstrellas(container, cantidad, colorDeEstrella){
     for(let i=0; i<cantidad; i++){
-        container.innerHTML += `<img class="estrella" src="${urlEstrella}"></img>`;        
+        container.innerHTML += `<img class="estrella" src="${colorDeEstrella}"></img>`;        
     }    
 }
 
