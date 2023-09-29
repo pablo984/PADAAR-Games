@@ -207,16 +207,21 @@ agregadas a las barras <span> mediante JavaScript: */
     margin-top: 3rem;
     margin-bottom: 1rem;
 }
+.caracteristicas{
+    display: flex;
+    flex-direction: column;    
+}
 
 .container-caracteristicas{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     font-family: 'Poppins';
     padding-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     border-top: 2px solid rgb(0, 119, 216);
     border-bottom: 2px solid rgb(0, 119, 216);
+    max-width: 520px;
 }
 
 .container-caracteristicas > h3{
@@ -396,7 +401,19 @@ agregadas a las barras <span> mediante JavaScript: */
 /*-------------RESPONSIVE DE LOGO----------------------------------- */
 @media (min-width: 320px) and (max-width: 1920px) {
     .logo{         
-        width: calc(150px + (250 - 150) * ((100vw - 320px) / (1920 - 320))); 
+        width: calc(150px + (200 - 150) * ((100vw - 320px) / (1920 - 320))); 
+    }
+}
+
+@media screen and (min-width:554px){
+    .caracteristicas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-caracteristicas{
+        width: 520px;
     }
 }
     
@@ -445,7 +462,7 @@ agregadas a las barras <span> mediante JavaScript: */
     .nav > a{
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: 500;
+        font-weight: bold;
         padding: 5px;
         color: #520096;
     }
@@ -502,6 +519,10 @@ agregadas a las barras <span> mediante JavaScript: */
         margin-left: 7rem;
     }
 
+    .d-block{
+        max-height: 8rem;        
+    }
+
     .contenido-menu{
         margin-right: 7rem;
     }
@@ -520,12 +541,6 @@ agregadas a las barras <span> mediante JavaScript: */
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .container-caracteristicas{
-        /* margin-left: 8.2rem;
-        margin-right: 8.2rem; */
-        width: 520px;
     }
 
     .medios-pago, .medios-pago-2{
@@ -576,18 +591,6 @@ agregadas a las barras <span> mediante JavaScript: */
         margin-right: 5.2rem;
     }
 
-    .caracteristicas{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container-caracteristicas{
-        /* margin-left: 8.2rem;
-        margin-right: 8.2rem; */
-        width: 520px;
-    }
-
     .medios-pago, .medios-pago-2{
         margin:auto;
         width: 520px;
@@ -613,5 +616,4 @@ agregadas a las barras <span> mediante JavaScript: */
         width: 768px;
         margin:auto;
     }
-
 }

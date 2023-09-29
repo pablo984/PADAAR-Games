@@ -31,13 +31,13 @@ const estrellaBlanca = "./img/estrella-blanca.png";
 //Constante que contiene el número de estrellas de un producto:
 const cantidadDeEstrellasDelProducto = productosObjetoJs[idBoton].puntuacion.length;
 
-//Sólo se obtienen las CLAVES del objeto que le pase del array: 
+//Sólo se obtienen las CLAVES de las características del objeto que le pase del array: 
 let claves = Object.keys(productosObjetoJs[idBoton].caracteristicas); 
 
-//Se obtiene la URL de la imagen del producto y se guarda en la variable:
+//Se obtiene la URL de la imagen del producto y se guarda en la siguiente variable:
 let urlImagen = productosObjetoJs[idBoton].imagen;
 
-//Creación del <div> que contendrá el nombre, imagen, precio y estrellas del producto, y el boton volver:
+//Creación del <div> que contendrá el nombre, imagen, precio y estrellas del producto, y el botón volver:
 const divContainerProducto = document.createElement('div');
 
 //Agregado de una clase: 
@@ -58,7 +58,7 @@ divContenedorEstrellas.classList.add('divEstrellas');
 //Creación de una etiqueta del tipo <img>:
 const etiquetaImg = document.createElement('img'); 
 
-//Agregado de una clase
+//Agregado de una clase:
 etiquetaImg.classList.add('foto'); 
 
 //Establece la ruta de la imagen la cual se encuentra dentro de la variable 'urlImagen':
@@ -88,12 +88,12 @@ claves.forEach(clave => {
 //Se coloca todo lo del container de características dentro de la <secction> de características: 
 seccionCaracteristicas.appendChild(divContainerCaracteristicas);
 
-//El siguiente botón fue creado DINÁMICAMENTE en la línea 64 y fue insertado en el documento: 
+//El siguiente botón fue creado DINÁMICAMENTE en la línea 76 y fue insertado en el documento: 
 const botonVolver = document.querySelector('.boton-volver');
 
 botonVolver.addEventListener('click', volverALaPaginaPrincipal);
 
-//Toma agrega a cada producto tantas estrellas como diga la clave 'puntuacion' del JOSN:
+//Función que agrega a cada producto tantas estrellas como diga la clave 'puntuacion' del JOSN:
 function agregarEstrellas(container, cantidad, colorDeEstrella){
     for(let i=0; i<cantidad; i++){
         container.innerHTML += `<img class="estrella" src="${colorDeEstrella}"></img>`;        

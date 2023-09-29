@@ -4,18 +4,15 @@ let datosJSON;
 //Variable que almacenará el dato JSON transformado a Objeto JavaScript: 
 let deJSONaObjetoJs;
 
-//PROVISORIO: FUNCIÓN QUE BORRARÁ EL LOCAL STORAGE PARA ACTUALIZAR LOS DATOS DEL JSON:
-localStorage.clear();
-
 //Sección que contendrá la lista de productos: 
 const listaDeProductos = document.querySelector('.productos-semidescripcion');
 
-//Funcion que espera a que el DOM cargue primero para, luego, empezar a ejecutar las funciones:
+//Función que espera a que el DOM cargue primero para, después, empezar a ejecutar las funciones:
 window.addEventListener('DOMContentLoaded', verificarLocalStorage);
 
 //Verificar si hay datos en el localStorage:
 function verificarLocalStorage(){   
-    //Busca y trae los datos del localStorage y los guarda en la variable 'datosDelLocalStorage':
+    //Busca y trae los datos del localStorage, y los guarda en la variable 'datosDelLocalStorage':
     let datosDelLocalStorage = localStorage.getItem("productos"); 
 
     //Si no hay nada en el localStorage, ejecuta la función de 'cargarJSON':
