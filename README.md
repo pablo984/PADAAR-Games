@@ -60,3 +60,7 @@ para que ese commit quede con los nuevos datos correctos.
 * TERCERA ACTUALIZACIÓN 2025 DESDE WINDOWS: borré el proyecto que había hecho en 2023 y luego hice un "git clone" del repo que tenía
 en GitHub. Ahora hice un "git push" desde Windows y todo bien. 
 
+* CUARTA ACTUALIZACIÓN 2025 DESDE WINDOWS: actualicé GIT en Windows con el comando "git update-git-for-windows" desde la consola de GIT. 
+Luego hice un "commit" y un "push" y desde LINUX hice un "pull" para que actualice los cambios y todo OK. 
+
+
