@@ -57,3 +57,6 @@ probar Git desde Linux.
 Volví a configurar el user y el mail y luego arreglé el commit anterior con el comando "git commit --amend --reset-author --no-edit"
 para que ese commit quede con los nuevos datos correctos. 
 
+* TERCERA ACTUALIZACIÓN 2025 DESDE WINDOWS: borré el proyecto que había hecho en 2023 y luego hice un "git clone" del repo que tenía
+en GitHub. Ahora hice un "git push" desde Windows y todo bien. 
+
