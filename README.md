@@ -64,3 +64,8 @@ en GitHub. Ahora hice un "git push" desde Windows y todo bien.
 Luego hice un "commit" y un "push" y desde LINUX hice un "pull" para que actualice los cambios y todo OK. 
 
 * QUINTA ACTUALIZACIÓN 2025 DESDE LINUX: agregado de línea para probar un push. 
+
+* SEXTA ACTUALIZACIÓN 2025 DESDE LINUX: escribí el siguiente comando "git config --global credential.helper store" para que la próxima
+vez que haga un "push" y coloque mis credenciales, GIT lo guarde en texto plano y no me pida el usuario y la contraseña de token la próxima
+vez que haga un "push".  
+
