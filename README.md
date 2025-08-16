@@ -63,4 +63,4 @@ en GitHub. Ahora hice un "git push" desde Windows y todo bien.
 * CUARTA ACTUALIZACIÓN 2025 DESDE WINDOWS: actualicé GIT en Windows con el comando "git update-git-for-windows" desde la consola de GIT. 
 Luego hice un "commit" y un "push" y desde LINUX hice un "pull" para que actualice los cambios y todo OK. 
 
-
+* QUINTA ACTUALIZACIÓN 2025 DESDE LINUX: agregado de línea para probar un push. 
