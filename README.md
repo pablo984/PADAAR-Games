@@ -70,3 +70,6 @@ vez que haga un "push" y coloque mis credenciales, GIT lo guarde en texto plano 
 vez que haga un "push".
 
 * SÉPTIMA ACTUALIZACIÓN 2025 DESDE LINUX: esta vez probaré hacer un "push" y verificar que no me vuelva a pedir las credenciales desde Linux.
+
+* OCTAVA ACTUALIZACIÓN 2025 DESDE LINUX: se hizo un cambio de token para que expire dentro de un año, a partir de la fecha de hoy. Es decir, 
+que expirará el 16/08/2025. 
