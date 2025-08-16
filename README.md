@@ -67,5 +67,6 @@ Luego hice un "commit" y un "push" y desde LINUX hice un "pull" para que actuali
 
 * SEXTA ACTUALIZACIÓN 2025 DESDE LINUX: escribí el siguiente comando "git config --global credential.helper store" para que la próxima
 vez que haga un "push" y coloque mis credenciales, GIT lo guarde en texto plano y no me pida el usuario y la contraseña de token la próxima
-vez que haga un "push".  
+vez que haga un "push".
 
+* SÉPTIMA ACTUALIZACIÓN 2025 DESDE LINUX: esta vez probaré hacer un "push" y verificar que no me vuelva a pedir las credenciales desde Linux.
