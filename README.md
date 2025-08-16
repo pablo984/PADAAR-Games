@@ -49,3 +49,6 @@ imágenes de las estrellas, ya que la "puntuacion" la había agregado después a
 *SOLUCIÓN 2: ejecutar como primera función "localStorage.clear()" para borrar el localStorage y actualizar datos que se hayan 
 modificado en el JSON. Luego, una vez actualizado el JSON, lo vuelvo a subir a GitHub, abro la página para actualizar el JSON y, una 
 vez actualizado, puedo quitar dicha función del código y volver a subir el proyecto a GitHub.     
+
+* ACTUALIZACIÓN 2025: no se agregó nada más que esta línea para poder hacer un git push a GitHub desde una MV de Linux. Es decir, 
+probar Git desde Linux. 
