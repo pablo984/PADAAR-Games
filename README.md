@@ -52,3 +52,8 @@ vez actualizado, puedo quitar dicha función del código y volver a subir el pro
 
 * ACTUALIZACIÓN 2025: no se agregó nada más que esta línea para poder hacer un git push a GitHub desde una MV de Linux. Es decir, 
 probar Git desde Linux. 
+
+* SEGUNDA ACTUALIZACIÓN 2055: había configurado mal el user.mail y el user.email y por eso no podía hacer bien el commit. 
+Volví a configurar el user y el mail y luego arreglé el commit anterior con el comando "git commit --amend --reset-author --no-edit"
+para que ese commit quede con los nuevos datos correctos. 
+
